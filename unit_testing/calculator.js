@@ -3,6 +3,7 @@ function sum(a,b){
 }
 
 function divide(a,b){
+    if ( b === 0 || a === 0 ) throw new TypeError("cannot divide numbers");
     return a / b;
 }
 

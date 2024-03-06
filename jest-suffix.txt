@@ -1,0 +1,15 @@
+Wenn zwei Tests ".todo"-Suffix beinhalten
+        0 Tests(.todo wird für zukünftige Referenzzwecke verwendet)
+        Von 5 Tests werden die restlichen 3 getestet.
+
+Wenn ein Test ".only"-Suffix beinhaltet
+        1 Test
+
+Wenn drei Tests ".skip"-Suffix beinhalten
+        2 Tests
+
+Wenn 2 Tests in einem Describe geschachtelt sind und dieses Describe den Suffix ".only" trägt.
+        2 Tests
+
+Wenn 2 Tests den Suffix ".failing" beinhalten.
+        5 Tests(.failing verhindert nicht die Ausführung von Tests)
