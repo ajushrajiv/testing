@@ -13,5 +13,12 @@ async function fetchSingleTodoById(todoId){
     return todo;
 }
 
+async function fetchSingleTodoByUserId(userId){
+    const result = await axios.get("http://localhost:5030/v1/todo/byuserid", {params:{userId}})
+    const todo = result.data
+    return todo;
+}
+
 module.exports.fetchAllToDos = fetchAllToDos;
 module.exports.fetchSingleTodoById = fetchSingleTodoById;
+module.exports.fetchSingleTodoByUserId = fetchSingleTodoByUserId;
